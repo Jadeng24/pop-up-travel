@@ -25,7 +25,7 @@ class Footer extends Component {
                         <div className='footerItemContent pageLinks'>
                             <Link to='/destinations'> Destinations</Link>
                             <Link to='/shop'> Shop </Link>
-                            <Link to='/trailers'> Trailers </Link>
+                            <Link to='/vehicles'> Vehicles </Link>
                             <Link to='/about'> About </Link>
                             <Link to='/contact'> Contact </Link>
                         </div>

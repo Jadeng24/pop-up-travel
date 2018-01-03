@@ -76,7 +76,7 @@ class Nav extends Component {
                 </div></Link>
                     {/* right side of nav */}
                     <div className='navGroup sideNav'>
-                        <Link to='/trailers'> Trailers </Link>
+                        <Link to='/vehicles'> Vehicles </Link>
                         <Link to='/about'> About </Link>
                         <Link to='/contact'> Contact </Link>
                     </div>
