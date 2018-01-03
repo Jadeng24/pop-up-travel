@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Summer;
+    src: url('../Fonts/SummerRegular.otf'); 
+}
+.Loading {
+    width: 100vw;
+    min-height: calc(100vh - 130px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.Loading > h1 {
+    font-size: 70pt;
+    color: black;
+    padding: 20px 0px;
+    font-family: SummerBold,Helvetica, sans-serif;
+}
+.loader {
+    border: 6px solid #424242; /* Light grey */
+    border-top: 6px solid rgba(208, 208, 208, 0.5); 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1.1s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(240deg); }
+    100% { transform: rotate(360deg); }
+}
+
+

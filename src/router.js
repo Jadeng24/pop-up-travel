@@ -9,7 +9,7 @@ import Destinations from './components/Destinations/Destinations';
 import Shop from './components/Shop/Shop';
 import ProductDetails from './components/Shop/ProductDetails.js';
 import Details from './components/Details/Details';
-import Trailers from './components/Trailers/Trailers';
+import Vehicles from './components/Vehicles/Vehicles';
 import Loading from './components/Loading/Loading.js';
 import Admin from './components/Admin/Admin.js';
 import UserProfile from './components/Admin/ManageUsers/UserProfile.js';
@@ -32,7 +32,7 @@ export default (
         <Route component={ProductDetails} path='/productdetails/:id' />
 
         <Route component={Details} path='/details/:productid' />
-        <Route component={Trailers} path='/trailers' />
+        <Route component={Vehicles} path='/vehicles' />
         <Route component={Loading} path='/loading' />
         <Route component={Profile} path='/profile' />
         <Route component={EditProfile} path='/editprofile' />
@@ -42,7 +42,7 @@ export default (
         <Route component={ManageUsers} path='/manageusers' />
         <Route component={ManagePhotos} path='/managephotos' />
         <Route component={ManageProducts} path='/manageproducts' />
-        <Route component={ManageTrailers} path='/managevehicles' />
+        <Route component={ManageVehicles} path='/managevehicles' />
 
 
     </Switch>

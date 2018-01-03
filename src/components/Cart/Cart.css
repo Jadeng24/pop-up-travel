@@ -1,0 +1,8 @@
+.Cart {
+    min-height: calc(100vh - 130px);
+    display: flex;
+    justify-content: center;
+}
+.Cart > h2 {
+    padding: 40px 0px;
+}

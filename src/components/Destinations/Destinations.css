@@ -1,0 +1,84 @@
+.Destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+path {
+  pointer-events: all;
+  transform-origin: 50% 40%;
+}
+
+path:hover {
+    opacity: 1;
+    cursor: pointer;
+    fill: rgba(224, 224, 224, 0.9);
+    transition: .4s;
+    z-index: 10;
+}
+path:active {
+opacity: 1;
+fill: rgba(224, 224, 224, 0.3);
+transition: .1s;
+
+}
+.myMap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 300px;
+    
+}
+.Destinations h1 {
+    padding: 10px;
+    font-family: Summer;
+    font-size: 20pt;
+}
+
+
+.destinationsImagesHolder {
+    width: 100vw;
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.destinationImageHolder {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 5px;
+    
+}
+.destinationImage {
+    transition: .3s;
+    max-width:500px;
+    max-height: 500px;
+}
+.destinationImageHolder:hover .destinationTitle{
+    opacity: 1;
+}
+.destinationTitle {
+    margin-top: -50px;
+    color: white;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: .4;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+}
+@media (max-width:800px) {
+.destinationImage {
+    /* width: 100%; */
+}
+}
+
+.viewAllStatesBtn {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 10px;
+}

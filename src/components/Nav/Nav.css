@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Summer;
+    src: url('../Fonts/SummerRegular.otf'); 
+}
+@font-face {
+    font-family: SummerItalic;
+    src: url('../Fonts/SummerRegularItalic.otf'); 
+}
+@font-face {
+    font-family: SummerBold;
+    src: url('../Fonts/SummerBold.otf');
+}
+@font-face {
+    font-family: SummerBoldItalic;
+    src: url('../Fonts/SummerBoldItalic.otf');
+}
+@font-face {
+    font-family: SummerLight;
+    src: url('../Fonts/SummerLight.otf'); 
+}
+@font-face {
+    font-family: SummerLightItalic;
+    src: url('../Fonts/SummerLightItalic.otf'); 
+}
+
+.Nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    
+    transition: .2s;
+}
+.Nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.topSectionNav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    background: rgb(208, 208, 208);
+    height: 30px;
+    padding-right: 5px;
+    transition: .2s;
+}
+.topNavItem {
+display: flex;
+justify-content: center;
+align-items: center;
+background:rgb(227, 227, 227);
+margin: 0px 4px;
+border-radius: 2px;
+padding: 0px 4px;
+cursor: pointer;
+}
+.topNavItem:hover {
+    background: white;
+}
+.topNavItem >h3 {
+    font-family: Summer,Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    padding: 2px 5px;
+}
+.adminNavItem {
+   color: #00BCD4;
+}
+.bottomSectionNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.08);
+    width: 94vw;
+    transition: .2s;
+}
+.navGroup {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 30%;
+    min-width: 250px;
+}
+.navGroup a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-family: Summer, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 100px;
+    /* width: 40%; */
+    opacity: .8;
+}
+
+.navGroup a:hover {
+    opacity: 1;
+}
+
+.logoNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-family: SummerBold;
+    height: 100%;
+    
+}
+.logoImg {
+    height: 60px;
+    transition: .1s;
+}
+.logoNav a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7); 
+    transition: .1s;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    
+}
+.logoNav:hover img{
+    height: 65px;
+    cursor: pointer;
+}
+.logoNav:hover {
+    transition: .1s;
+
+}
+.modal {
+    display: none;
+    z-index: 12;
+}
+@media (max-width: 700px){
+    .Nav {
+    }
+    .topSectionNav {
+        height: 24px;
+    }
+   .logoNav {
+       font-size: 30pt;
+       margin-left: 25px;
+       letter-spacing: 0px;
+        flex-direction: row;
+   }
+   .logoImg {
+       height: 60px;
+       margin-right: 10px;
+   }
+   .sideNav {
+       display: none;
+   }
+/* drop down menu BUTTON for mobile */
+.dropDownMenuBtn {
+    width: 40px;
+    height: 50px;
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+    
+}
+/* .dropDownMenuBtn:hover .bar{
+    background: grey;
+} */
+/* sections of menu burger menu */
+.bar {
+    width: 100%;
+    height: 4px;
+    background: black;
+    transition: .5s;
+    border-radius: 2px;
+}
+.bar1 {
+    position: absolute;
+    top: 20%;
+    transition-delay: .2s;
+}
+.midBar1{
+    position: absolute;
+    top:calc(50% - 2px);
+    transition-delay: 0s;
+}
+.midBar2{
+    position: absolute;
+    top:calc(50% - 2px);
+    transition-delay: 0s;
+}
+.bar3 {
+    position: absolute;
+    bottom: 20%;
+    transition-delay: .2s;
+
+}
+/* animation section when clicked */
+.animateBar1 {
+    top:calc(50% - 3px);
+    opacity: 0;
+    transition-delay: 0s;
+}
+.animateMidBar1 {
+    transform: rotate(-45deg);
+    transition-delay: .3s;
+}
+.animateMidBar2 {
+    transform: rotate(45deg);
+    transition-delay: .3s;
+}
+.animateBar3 {
+    bottom:calc(50% - 3px);
+    transition-delay: 0s;
+    
+    opacity: 0;
+}
+/* end of menu button */
+
+    .modal {
+        position: absolute;
+        top: 75px;
+        min-height: calc(100vh - 75px);
+        width: 100vw;
+        background: rgb(249, 249, 249);
+        background: white;
+        transition: .5s;
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        
+    }
+    .modalItemsHolder {
+        display: flex;
+        flex-direction: column;
+    }
+    .modal a {
+        text-decoration: none;
+        color: black;
+        font-family: SummerBold;
+        font-size: 30pt;
+        width: 90%;
+        margin-left:5%;
+        border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+        transition: 1.2s;
+        line-height: 30pt;
+        opacity: .8;
+        padding: 5px 0;
+    }
+    .modal a:hover {
+        z-index: 10;
+        border-bottom: solid 1px white;
+        transition: .1s;
+        background: rgb(237, 237, 237);
+    }
+    .hide {
+        margin-left: -100vw;
+        transition: .4s;
+    }
+    .hide a {
+        opacity: 0;
+        margin-top: 100px;
+        margin-left: 300px;
+        font-size: 10pt;
+        transition: .5s;
+        width: 10%;
+    }
+}
