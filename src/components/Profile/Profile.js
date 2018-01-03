@@ -28,7 +28,7 @@ class Profile extends Component {
                 <div className='leftProfile'>
                     {this.state.user.image ? <img src={user.image} alt='profile' className='profileImage' /> : <img src={PlaceholderImg} alt='profile' className='profileImage' />}
                     <Link to='/editprofile'><h2 className='ProfileBtn'>Edit Profile</h2></Link>
-                    <a href='http://localhost:3002/auth/logout'><h3 className='ProfileBtn'><i className="fa fa-user-circle" aria-hidden="true"></i>LOG OUT</h3></a>
+                    <a href='http://popuptravel.net:3002/auth/logout'><h3 className='ProfileBtn'><i className="fa fa-user-circle" aria-hidden="true"></i>LOG OUT</h3></a>
                 </div>
 
                 {/*===| RIGHT PROFILE SECTION |=================================*/}
