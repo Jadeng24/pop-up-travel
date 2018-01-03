@@ -1,0 +1,12 @@
+CREATE TABLE users(
+    id SERIAL PRIMARY KEY ,
+    first_name VARCHAR(25),
+    last_name VARCHAR(25),
+    email TEXT,
+    image TEXT,
+    location_city VARCHAR(20),
+    location_state VARCHAR(15),
+    is_admin BOOL,
+    auth_id TEXT,
+    new_user BOOL
+)

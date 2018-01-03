@@ -1,0 +1,7 @@
+CREATE TABLE photos
+(id SERIAL PRIMARY KEY,
+title VARCHAR(25),
+image VARCHAR(300),
+location_state VARCHAR(30),
+featured BOOL
+)

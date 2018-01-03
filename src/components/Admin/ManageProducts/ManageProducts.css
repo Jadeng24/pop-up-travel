@@ -1,0 +1,115 @@
+.ManageProducts {
+    
+}
+.fa-chevron-left {
+    font-size: 30pt;
+    padding: 10px;
+    cursor: pointer;
+    transition-delay: .2s;
+    transition: .3s;
+    color: black;
+}
+.fa-chevron-left:hover {
+    transform: scale(1.20);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.fa-chevron-left:active {
+    transform: scale(1);
+    transition-delay: 0s;
+    transition: .1s;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+.tabItemHolder {
+    padding: 20px 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    
+}
+
+.tabButton {
+   
+}
+.cloudinary {
+    max-width: 300px;
+    max-height: 400px;
+    border: solid 2px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    transition-delay: .2s;
+    transition: .3s;
+}
+.cloudinary:hover {
+    border: solid 2px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+.EditprofileImage {
+    border-radius: 5px;
+}
+.addProductBtn {
+    margin-top: 50px;
+}
+.manageProductsHolder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.manageProductItem {
+    width: 30%;
+    max-width: 250px;
+    min-width: 200px;
+    min-height: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+    margin: 10px;
+    transition-delay: .2s;
+    transition: .3s;
+    
+}
+.manageProductItem:hover {
+    transform: scale(1.05);
+    
+}
+.manageProductImg {
+    max-width:80%;
+    max-height: 80%;
+}
+.manageProductHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08); 
+    height: 25px;
+    background: rgb(227, 227, 227);
+    padding: 0px 10px;
+}
+.manageInStock {
+    background: white;
+    border-radius: 4px;
+    font-size: 18pt;
+    color: white;
+    border: solid 1px white;
+    cursor: pointer;
+}
+.manageInStock:hover {
+    color: black;
+    opacity: .8;
+}
+.inStock {
+    background: rgb(89, 172, 89);
+    padding: 0px 15px;
+}
+.outOfStockBtn {
+    background: rgb(142, 142, 142);
+    padding: 0px 10px;
+}
+.fa-trash {
+    cursor: pointer;
+
+}
