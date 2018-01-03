@@ -22,19 +22,19 @@ class Loading extends Component {
 
             if (res.data.is_admin) {
 
-                window.location.assign('http://localhost:3000/#/admin')
+                window.location.assign('/#/admin')
 
 
             } else {
                 if (res.data.new_user) {
 
-                    window.location.assign('http://localhost:3000/#/editprofile')
+                    window.location.assign('/#/editprofile')
 
 
                 }
                 else {
 
-                    window.location.assign('http://localhost:3000/#/')
+                    window.location.assign('/#/')
 
 
                 }
