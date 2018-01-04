@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css';
 import { Carousel } from 'react-responsive-carousel';
+import { Link } from 'react-router-dom';
 
 import axios from 'axios';
 
@@ -56,8 +57,10 @@ class Home extends Component {
                 return (
                     <div key={i} className={product.in_stock ? 'featuredProduct' : 'featuredProduct outOfStock'} >
 
-                        <img src={product.image} alt={product.title} className='featuredProductImg' />
-                        {product.title}
+                        <Link to={`/productdetails/${product.id}`}>
+                            <img src={product.image} alt={product.title} className='featuredProductImg' />
+                            {product.title}
+                        </Link>
                     </div>
                 )
             }
@@ -69,9 +72,8 @@ class Home extends Component {
 
             return (
                 <div key={i}>
-
-                    <img src={myImg.image} alt={myImg.title} />
-                    <p className="legend">{myImg.title}</p>
+                        <img src={myImg.image} alt={myImg.title} />
+                        <p className="legend">{myImg.title}</p>
                 </div>
             )
 

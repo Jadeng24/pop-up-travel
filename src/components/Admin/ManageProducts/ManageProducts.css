@@ -85,17 +85,25 @@
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08); 
-    height: 25px;
+    height: 30px;
     background: rgb(227, 227, 227);
     padding: 0px 10px;
 }
 .manageInStock {
     background: white;
     border-radius: 4px;
-    font-size: 18pt;
+    font-size: 16pt;
     color: white;
     border: solid 1px white;
     cursor: pointer;
+}
+@media (max-width: 800px) {
+    .manageInStock {
+        font-size: 12pt;
+    }
+    .manageProductHeader {
+        height: 25px;
+    }
 }
 .manageInStock:hover {
     color: black;

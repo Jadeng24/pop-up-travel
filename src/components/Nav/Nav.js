@@ -99,7 +99,7 @@ class Nav extends Component {
                     <div className='modalItemsHolder'>
                         <Link to='/destinations'> Destinations</Link>
                         <Link to='/shop'> Shop </Link>
-                        <Link to='/trailers'> Trailers </Link>
+                        <Link to='/vehicles'> Vehicles </Link>
                         <Link to='/about'> About </Link>
                         <Link to='/contact'> Contact </Link>
                     </div>

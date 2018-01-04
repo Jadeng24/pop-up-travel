@@ -182,8 +182,8 @@
       left: 50%;
       margin-left: -45%;
       width: 90%;
-      border-radius: 10px;
-      background: #000;
+      border-radius: 5px;
+      background: rgba(0, 0, 0, 0.2);
       color: #fff;
       padding: 10px;
       font-size: 12px;
@@ -233,7 +233,9 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
     color: #fff; }
   .carousel:hover .slide .legend {
-    opacity: 1; }
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.4);
+    transition: .3s; }
 
     /* end of carousel */
 
@@ -241,7 +243,7 @@
     .seperatorDiv {
       display: flex;
       justify-content: center;
-      width: 94vw;
+      width: 94%;
       border-top: solid 1px rgba(0, 0, 0, 0.08);
       margin-top: 40px;
     }

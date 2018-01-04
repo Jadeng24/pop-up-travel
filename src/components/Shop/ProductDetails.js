@@ -22,14 +22,25 @@ class ProductDetails extends Component {
     }
     render() {
         return (
-            <div className='UserProfileHolder'>
+            <div className='ProductDetailsHolder'>
+                <Link to='/shop' className='ProductDetailsBackBtn' ><i className="fa fa-chevron-left" aria-hidden="true"></i></Link>
+                <div className='ProductDetails'>
+                    <div className='ProductDetailsLeft'>
 
-                <div className='UserProfile'>
-                    <Link to='/shop'><i className="fa fa-chevron-left" aria-hidden="true"></i></Link>
-                    <img src={this.state.product.image} className='featuredProductImg' alt={'product'} />
-                    <div><h1>{this.state.product.title}</h1><h1>${this.state.product.price}</h1></div>
-                    <h3>{this.state.product.description}</h3>
-                    <button>Add To Cart</button>
+                        <img src={this.state.product.image} className='ProductDetailsImg' alt={'product'} />
+                        
+                    </div>
+                    <div className='ProductDetailsRight'>
+                        <h1 className='PDRightItem'>${this.state.product.price}</h1>
+                        <h1 className='PDRightItem'>{this.state.product.title}</h1>
+                        <h3 className='PDRightItem'>AVAILABILITY: {this.state.product.in_stock ? 'This item is available.' : 'This item is currently out of stock. We will have this item back in stock soon.'}</h3>
+                        
+                        <div className='divider'></div>
+                        {this.state.size ? <h3>SIZE *</h3> : ''}
+                        <div className='addToCartBtn'> ADD TO CART </div>
+
+                        <h3 className='PDRightItem'>DETAILS <br/>{this.state.product.description}</h3>
+                    </div>
                 </div>
             </div>
         )
