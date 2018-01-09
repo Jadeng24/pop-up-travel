@@ -22,6 +22,7 @@ form input {
     font-size: 14pt;
     line-height: 14pt;
     z-index: 1;
+    color: black;
 }
 
 textarea {
